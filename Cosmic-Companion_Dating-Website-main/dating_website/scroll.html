@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profiles</title>
+<link rel="stylesheet" href="scroll.css">
+</head>
+<body>
+  <div class="shows">
+  <button id="return" onclick="window.location.href='dating.html'">Return</button>
+  <button id="showFilters">Show Filter</button>
+  </div>
+  <div id="filterContainer">
+
+
+  <form id="addFilters">
+    
+    <button id="hideFilters">Hide Filter</button>  
+    <button id="filtersBtn" type="submit">Apply Filter</button>
+    <div class="f1">
+    <div>
+    <label for="age">Age</label><br>
+    <input type="number" id="age" name="age" min="0"max="35" placeholder="None" value="0"><br>
+    </div>
+    <div>
+    <label for="year">Year of Study</label><br>
+    <select name="year" id="year">
+    <option value="None">None</option>
+    <option value="1st">1</option>
+    <option value="2nd">2</option>
+    <option value="3rd">3</option>
+    <option value="4th">4</option></select><br>
+    </div>
+    <div>
+    <label for="gender">Gender</label><br>
+    <select name="gender" id="gender">
+    <option value="None">None</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option></select><br>
+    </div>
+    </div>
+    <label>Interests</label><br>
+    <div class="f2">
+    <input type="checkbox" id="traveling" name="interest" value="Traveling">
+    <label for="traveling">Traveling</label>
+    <input type="checkbox" id="sports" name="interest" value="Sports">
+    <label for="sports">Sports</label>
+    <input type="checkbox" id="movies" name="interest" value="Movies">
+    <label for="movies">Movies</label>
+    <input type="checkbox" id="music" name="interest" value="Music">
+    <label for="music">Music</label>
+    <input type="checkbox" id="literature" name="interest" value="Literature">
+    <label for="literature">Literature</label>
+    <input type="checkbox" id="technology" name="interest" value="Technology">
+    <label for="technology">Technology</label>
+    <input type="checkbox" id="fashion" name="interest" value="Fashion">
+    <label for="fashion">Fashion</label>
+    <input type="checkbox" id="art" name="interest" value="Art">
+    <label for="art">Art</label><br>
+    </div>
+    <label>Hobbies</label>
+    <div class="f2">
+    <input type="checkbox" id="reading" name="hobby" value="Reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" id="cooking" name="hobby" value="Cooking">
+    <label for="cooking">Cooking</label>
+    <input type="checkbox" id="coding" name="hobby" value="Coding">
+    <label for="coding">Coding</label>
+    <input type="checkbox" id="gardening" name="hobby" value="Gardening">
+    <label for="gardening">Gardening</label>
+    <input type="checkbox" id="painting" name="hobby" value="Painting">
+    <label for="painting">Painting</label>
+    <input type="checkbox" id="photography" name="hobby" value="Photography">
+    <label for="photography">Photography</label>
+    <input type="checkbox" id="watching" name="hobby" value="Watching YouTube/Instagram">
+    <label for="watching">Watching YouTube/Instagram</label>
+    <input type="checkbox" id="musical" name="hobby" value="Playing musical instruments">
+    <label for="musical">Playing musical instruments</label>
+    </div>
+  </form>
+  </div>
+
+<br><br><br><br><br>
+<div id="studentsContainer"></div>
+
+<script src="scroll.js"></script>
+
+</body>
+</html>
+

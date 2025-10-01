@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- preloading images so that there is no lag while changing background image -->
+    <link rel="preload" href="background/bg1.png" as='image'>
+    <link rel="preload" href="background/bg2.jpg" as='image'>
+    <link rel="preload" href="background/bg3.jpg" as='image'>
+    <link rel="preload" href="background/bg4.jpg" as='image'>
+    <link rel="preload" href="background/bg5.png" as='image'>
+    <link rel="preload" href="background/bg6.jpg" as='image'>
+
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body class="login-page">
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="inputBox">
+            <!-- setting spellcheck to false to avoid red underline -->
+            <input type="text" spellcheck="false" id="username" placeholder="username" required>
+            </div>
+            <div class="inputBox">
+            <input type="password" id="password" placeholder="password"required>
+            </div>
+            <button id="loginButton" type="submit">Login</button>
+        </form>
+        <a href="forgot.html">Forgot Password?</a>
+        <p style="color: #f00;font-size: 1.2em;" id="login-message"></p>
+        </div>
+
+    <script src="login.js"></script>
+    
+</body>
+</html>
+

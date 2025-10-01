@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="forgot.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="i">Enter Username</h2>
+        <form id="forgot-form">
+            <div class="inputBox">
+                <!-- setting spellcheck to false -->
+            <input type="text" spellcheck="false" id="username"placeholder="username" required>
+            </div>
+            <button id="forgotButton" type="submit">Submit</button>
+        </form>
+        <p style="color: #f00;font-size: 1.2em;"id="uIncorrect"></p><!--to display invalid username-->
+        <div id="question-section" style="display: none;">
+            <label style="color: #0f0;font-size: 1.2em;" for="answer" id="question"></label>
+            <div class="inputBox">
+            <input type="password" id="answer" placeholder="answer">
+            </div>
+            <br>
+            <button id="checkButton" type="button" onclick="checkAnswer()">Check</button>
+        </div>
+        <div id="password-section" style="display: none;">
+            <p style="color: #0f0;font-size: 1.2em;">Your password is : <span style="color: #fff;" id="password"></span></p>
+        </div>
+        <p style="color: #f00;font-size: 1.2em;"id="aIncorrect"></p>
+        <button id="back" onclick="window.location.href='login.html'">Return to Login Page</button>
+        </div>
+    
+        
+        <script src="forgot.js"></script>
+
+</body>
+
+</html>
+

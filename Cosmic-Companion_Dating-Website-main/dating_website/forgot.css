@@ -1,0 +1,87 @@
+*{
+    font-family:Garamond;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    background-image: url(background/bg02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+}
+.container{
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
+    width: 300px;
+    box-shadow: 0px 0px 30px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 40px;
+    border-radius: 16px;
+    gap: 20px;
+}
+.container:hover{
+    box-shadow: 0px 0px 50px #000;
+}
+.container #forgot-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.container h2{
+    color: #00f;
+    font-size: 2em;
+}
+
+.inputBox input{
+    width: 270px;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    outline: none;
+    padding:  16px ;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.inputBox input:focus{
+    box-shadow: 0 0 0 2px #00f;
+
+}
+#forgotButton,#checkButton{
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  background: #00f;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#forgotButton:hover,#checkButton:hover{
+    background:#00b;
+}
+#back{
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    background: rgb(255, 183, 0);
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+#back:hover{
+      background:goldenrod;
+  }
+  

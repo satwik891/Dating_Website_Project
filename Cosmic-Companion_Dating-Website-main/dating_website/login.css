@@ -1,0 +1,86 @@
+*{
+    font-family:Garamond;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-page{
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    background-image: url('background/bg1.png');
+    transition: background-image 1s ease-in-out;
+}
+.container{
+    background-color: rgba(0, 0, 0,0.7);
+    backdrop-filter: blur(8px);
+    width: 300px;
+    box-shadow: 0px 0px 30px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 40px;
+    border-radius: 16px;
+    gap: 30px;
+    transition: 0.1s;
+}
+.container:hover{
+    box-shadow: 0px 0px 50px #000;
+}
+.container #login-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.container h2{
+    color: rgb(255, 183, 0);
+    font-size: 2.2em;
+}
+
+.inputBox input{
+    width: 270px;
+    background: rgba(54, 54, 54, 0.4);
+    border: none;
+    outline: none;
+    padding:  16px ;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.inputBox input:focus{
+    box-shadow: 0 0 0 2px rgb(255, 183, 0);
+}
+
+#loginButton{
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  background: rgb(255, 183, 0);
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#loginButton:hover{
+    background:goldenrod;
+}
+.container a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ccc;
+    transition: 0.1s;
+}
+.container a:hover{
+    color: #f00;
+    font-size: 1.22em;
+}

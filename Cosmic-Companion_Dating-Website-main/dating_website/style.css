@@ -1,0 +1,165 @@
+*{
+    font-family:Garamond;
+    font-weight: bolder;
+    color: #aaa;
+}
+
+.g0{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    font-size: x-large;
+}
+.g0 button{
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    background: #aaa;
+    color: #000;
+    font-size: 1.2em;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.g0 button:hover{
+    background: #fff;
+}
+.g0 #submit{
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    background: goldenrod;
+    color: #000;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.g0 #submit:hover{
+    background: rgb(255, 183, 0);
+    box-shadow: 0 0 0 2px rgb(255, 183, 0);
+}
+.g1{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.g1 #scrollBtn{
+    align-self: center;
+}
+.g1 #scrollBtn button{
+    background: rgba(255, 89, 244,0.6);
+}
+.g1 #scrollBtn button:hover{
+    background: rgb(255, 89, 244);
+}
+.g1 label{
+    cursor: pointer;
+    color: goldenrod;
+}
+.g1 div:hover label{
+    color: blue;
+}
+/* to remove the default up-down arrows on the input */
+.g1 input::-webkit-inner-spin-button,
+.g1 input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.g1 input, select{
+    width: 70%;
+    background: rgba(54, 54, 54, 0.6);
+    border: none;
+    outline: none;
+    padding:  8px ;
+    border-radius: 4px;
+    color: rgb(0, 255, 115);
+    font-weight: bold;
+    font-size: 1em;
+}
+.g1 option{
+    background-color: #000;
+    color: #aaa;
+}
+.g1 input:focus, select:focus {
+    border-color: #0fa;
+    box-shadow: 0 0 0 2px #0fa;
+}
+.g2{
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+}
+.g2>div>label{
+    color: goldenrod;
+}
+.g2>div:hover>label{
+    color: blue;
+}
+.g3{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+}
+.g3 label{
+    cursor: pointer;
+    transition: 5ms;
+}
+.g3 label:hover{
+    color: #fff;
+}
+.g3 input[type="checkbox"]{
+    display: none;
+}
+.g3 input[type="checkbox"]:checked + label {
+    color: rgb(0, 255, 115)
+}
+
+.mat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.mat p{
+    font-size: x-large;
+    color: goldenrod;
+}
+.mat>div{
+    margin: 10px;
+}
+.mat>p>span{
+    color: #0fa;
+}
+.mat>button{
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    background: goldenrod;
+    color: #000;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.mat>button:hover{
+    background: rgb(255, 183, 0);
+    box-shadow: 0 0 0 2px rgb(255, 183, 0);
+}
+
+
+body{
+    margin: 0;
+    background-image: url(background/space.png);
+    background-size: 200% 100%;
+    animation: change 30s ease infinite;
+    height: 100vh;
+}
+  
+@keyframes change {
+    from{
+      background-position: 0% 50%;
+    }
+    to{
+      background-position: 100% 50%;
+    }
+}
+
+
